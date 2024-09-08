@@ -1,0 +1,80 @@
+.title{
+    margin-top: 250px;
+}
+.total-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(234, 228, 238);
+    width: 98vw;
+    height: 1200px;
+}
+.write-here{
+    width: 40%;
+    height: 6%;
+    border: 2px solid rgb(84, 84, 143);
+    border-radius: 10px;
+    text-align: right;
+    font-size: 25px;
+    padding: 10px;
+    margin: 20px;
+}
+.spans-color{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+}
+.colorbox{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(8, 41, 39);
+}
+
+.btns-sec{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-around;
+}
+#add-btn{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(181, 207, 207);
+    border-radius: 5px;
+    font-size: 20px;
+}
+#delete-btn{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(238, 154, 224);
+    border-radius: 5px;
+    font-size: 20px;
+}
+.total-listed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.listed-tasks{
+    height: auto;
+    border-radius: 10px;
+    margin:10px 10px;
+    padding:0 20px;
+    display: inline-block;
+}
+.p-listed{
+    flex-basis: 500px;
+    font-size: 22px;
+    text-align: center; 
+    border-radius: 8px;
+    height:auto;
+}
