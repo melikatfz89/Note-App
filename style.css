@@ -1,5 +1,50 @@
+body{
+    background-color: rgb(236, 251, 255);
+    display: flex;
+    justify-content: center;
+}
+.switch-div{
+    display: flex;
+    justify-content: start;
+    width: 95vw;
+    margin: 100px;
+}
+#switch-theme{
+    background-color: rgb(240, 240, 240);
+    height: 45px;
+    width: 90px;
+    border-radius: 45%;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(80, 80, 80);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+#moon-icon{
+    background-color: rgb(245, 239, 239);
+    position: absolute;
+    right: 15px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+#sun-icon{
+    background-color: rgb(252, 235, 235);
+    position: absolute;
+    left: 15px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+
+
 .title{
-    margin-top: 250px;
+    margin-top: 100px;
 }
 .total-sec{
     display: flex;
@@ -8,7 +53,7 @@
     /* justify-content: center; */
     background-color: rgb(234, 228, 238);
     width: 98vw;
-    height: 1200px;
+    height: 3000px;
 }
 .write-here{
     width: 40%;
@@ -60,9 +105,10 @@
     align-items: center;
     justify-content: space-between;
     width: 90vw;
-    border: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
     margin-top: 20px;
-    border-radius: 5px;
+    margin-bottom: 50px;
+    /* border-radius: 5px; */
 }
 .listed-tasks{
     height: auto;
@@ -78,3 +124,11 @@
     border-radius: 8px;
     height:auto;
 }
+ .dark{
+    background-color: #000;
+    color: white;
+ }
+ .light{
+    background-color: rgb(234, 228, 238);
+    color: rgb(0, 0, 0);
+ }

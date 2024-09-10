@@ -59,3 +59,59 @@ function generateTextAndColors(){
 function removeNote(event){
     event.target.remove();
 }
+
+// dark-light
+const switchElem=document.querySelector('.switch-theme')
+const sunIcon=document.getElementById('sun-icon')
+const moonIcon=document.getElementById('moon-icon')
+const totalSection=document.querySelector('.total-sec')
+
+
+sunIcon.addEventListener('click', showSun)
+ function showSun(){
+    totalSection.classList.add('light')
+    if(totalSection.className.includes('light')){
+        localStorage.setItem('theme', 'light');
+        totalSection.style.backgroundColor='rgb(234, 228, 238)';
+        totalSection.style.color='#000';
+        sunIcon.style.backgroundColor='lightblue';
+        sunIcon.style.color='yellow';
+        moonIcon.style.backgroundColor='';
+        moonIcon.style.color='';
+    }
+ }
+ moonIcon.addEventListener('click', showMoon)
+ function showMoon(){
+    totalSection.classList.add('dark')
+    if(totalSection.className.includes('dark')){
+        localStorage.setItem('theme', 'dark');
+        totalSection.style.backgroundColor='black';
+        totalSection.style.color='rgb(234, 228, 238)';
+        moonIcon.style.backgroundColor='black';
+        moonIcon.style.color='white';
+        sunIcon.style.backgroundColor='';
+        sunIcon.style.color='';
+    }
+   
+ }
+
+// switchElem.addEventListener('click', changeColorBody)
+
+// function changeColorBody(){
+//      totalSection.classList.toggle('dark');
+
+//      if (totalSection.className.includes('dark')){
+//         localStorage.setItem('theme', 'dark')
+//      }
+//      else{
+//         localStorage.setItem('theme', 'light')
+//      }
+// }
+
+
+window.onload= function(){
+    const fixedColorSection=localStorage.getItem('theme')
+    if(fixedColorSection==='dark'){
+        totalSection.classList.add('dark');
+    }
+}
